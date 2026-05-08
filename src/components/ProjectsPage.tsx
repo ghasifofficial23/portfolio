@@ -72,6 +72,19 @@ const allProjects = [
     icon: <Terminal className="w-5 h-5" />,
     color: 'from-primary/15 to-accent/10',
   },
+  {
+    id: 7,
+    title: 'Maison',
+    category: 'E-Commerce • Luxury',
+    year: '2026',
+    description: 'A premium luxury e-commerce platform for high-end fashion collections, featuring smooth animations and a sophisticated visual aesthetic designed for elite brands.',
+    tech: ['Next.js', 'React', 'TailwindCSS', 'Framer Motion'],
+    features: ['Luxury product showcase', 'Animated transitions', 'Premium collection views', 'Responsive design'],
+    icon: <Smartphone className="w-5 h-5" />,
+    color: 'from-accent/20 to-primary/10',
+    url: 'https://maison-ecommerce-one.vercel.app/',
+    previewImage: '/maison-preview.png'
+  },
 ];
 
 interface ProjectsPageProps {
@@ -167,9 +180,16 @@ export default function ProjectsPage({ onClose }: ProjectsPageProps) {
                 {selected.url ? (
                   <>
                     <div className="absolute inset-0 bg-transparent z-10 hidden sm:block pointer-events-auto group-hover:pointer-events-none" />
+                    {selected.previewImage ? (
+                      <img 
+                        src={selected.previewImage} 
+                        alt={selected.title}
+                        className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-20 transition-opacity duration-500"
+                      />
+                    ) : null}
                     <iframe 
                       src={selected.url} 
-                      className="w-full h-full border-none pointer-events-none" 
+                      className="w-full h-full border-none pointer-events-none relative z-0" 
                       title={selected.title} 
                       tabIndex={-1} 
                       scrolling="no"
@@ -181,6 +201,12 @@ export default function ProjectsPage({ onClose }: ProjectsPageProps) {
                       </span>
                     </a>
                   </>
+                ) : selected.previewImage ? (
+                  <img 
+                    src={selected.previewImage} 
+                    alt={selected.title}
+                    className="w-full h-full object-cover"
+                  />
                 ) : (
                   <div className="w-[85%] h-[75%] bg-dark-card/60 rounded-xl p-6 backdrop-blur-sm border border-border/30">
                     <div className="flex gap-2 mb-4">
