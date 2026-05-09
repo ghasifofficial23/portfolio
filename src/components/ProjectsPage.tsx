@@ -85,6 +85,19 @@ const allProjects = [
     url: 'https://maison-ecommerce-one.vercel.app/',
     previewImage: '/maison-preview.png'
   },
+  {
+    id: 8,
+    title: 'KAYA Restaurant',
+    category: 'Fine Dining • Luxury',
+    year: '2026',
+    description: 'A Michelin 3-star fine dining restaurant platform built around wood-fired hearth cooking. Features an interactive 3D particle background and a sophisticated narrative-driven UI.',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Three.js'],
+    features: ['Interactive 3D particle system', 'One-page scrolling architecture', 'Reservation management', 'Excellence showcase'],
+    icon: <Globe className="w-5 h-5" />,
+    color: 'from-accent/25 to-secondary/10',
+    url: 'https://kaya-rose.vercel.app/',
+    previewImage: '/kaya-preview.png'
+  },
 ];
 
 interface ProjectsPageProps {
