@@ -13,7 +13,8 @@ const allProjects = [
     features: ['Patient intake forms', 'Appointment calendar', 'Clinical records', 'Admin dashboard'],
     icon: <Layout className="w-5 h-5" />,
     color: 'from-secondary/20 to-secondary/5',
-    url: 'https://dentist-brown-chi.vercel.app/'
+    url: 'https://dentist-brown-chi.vercel.app/',
+    previewImage: '/lumina-preview.png'
   },
   {
     id: 2,
@@ -25,7 +26,8 @@ const allProjects = [
     features: ['Membership portal', 'E-commerce store', 'Fitness blog', 'Admin panel'],
     icon: <Globe className="w-5 h-5" />,
     color: 'from-primary/20 to-primary/5',
-    url: 'https://german-fitness.vercel.app/'
+    url: 'https://german-fitness.vercel.app/',
+    previewImage: '/german-fitness.png'
   },
   {
     id: 3,
@@ -37,7 +39,8 @@ const allProjects = [
     features: ['Modern typography', 'Smooth animations', 'High-end UI/UX', 'Responsive design'],
     icon: <Palette className="w-5 h-5" />,
     color: 'from-accent/20 to-accent/5',
-    url: 'https://gym-landing-page-puce-gamma.vercel.app/'
+    url: 'https://gym-landing-page-puce-gamma.vercel.app/',
+    previewImage: '/benny-fitness.png'
   },
   {
     id: 4,

@@ -3,9 +3,9 @@ import { ExternalLink, Github } from 'lucide-react';
 import TiltCard from './TiltCard';
 
 const projects = [
-  { title: 'Lumina Dental Studio', category: 'Healthcare • Dashboard', description: 'Exceptional aesthetic dental care dashboard and smile transformations patient management system.', tech: ['React', 'Supabase', 'TailwindCSS'], color: 'from-secondary/20 to-secondary/5', url: 'https://dentist-brown-chi.vercel.app/' },
-  { title: 'German Fitness & Sports', category: 'Fitness • E-Commerce', description: 'Elite fitness training center platform featuring membership registration and supplements store.', tech: ['React', 'Node.js', 'Vercel'], color: 'from-primary/20 to-primary/5', url: 'https://german-fitness.vercel.app/' },
-  { title: 'BENNY™ Fitness', category: 'Landing Page • Health', description: 'Premium gym landing page with modern typography, smooth animations, and a high-end visual aesthetic.', tech: ['React', 'TailwindCSS', 'Motion'], color: 'from-accent/20 to-accent/5', url: 'https://gym-landing-page-puce-gamma.vercel.app/' },
+  { title: 'Lumina Dental Studio', category: 'Healthcare • Dashboard', description: 'Exceptional aesthetic dental care dashboard and smile transformations patient management system.', tech: ['React', 'Supabase', 'TailwindCSS'], color: 'from-secondary/20 to-secondary/5', url: 'https://dentist-brown-chi.vercel.app/', previewImage: '/lumina-preview.png' },
+  { title: 'German Fitness & Sports', category: 'Fitness • E-Commerce', description: 'Elite fitness training center platform featuring membership registration and supplements store.', tech: ['React', 'Node.js', 'Vercel'], color: 'from-primary/20 to-primary/5', url: 'https://german-fitness.vercel.app/', previewImage: '/german-fitness.png' },
+  { title: 'BENNY™ Fitness', category: 'Landing Page • Health', description: 'Premium gym landing page with modern typography, smooth animations, and a high-end visual aesthetic.', tech: ['React', 'TailwindCSS', 'Motion'], color: 'from-accent/20 to-accent/5', url: 'https://gym-landing-page-puce-gamma.vercel.app/', previewImage: '/benny-fitness.png' },
 ];
 
 export default function WorkFolder() {
@@ -31,7 +31,16 @@ export default function WorkFolder() {
                   style={{ background: 'rgba(20,20,20,0.7)', backdropFilter: 'blur(24px)', border: '1px solid rgba(42,42,42,0.6)' }}
                 >
                   <div className={`relative h-48 md:h-56 bg-gradient-to-br ${project.color} flex items-center justify-center overflow-hidden`}>
-                    {project.url ? (
+                    {project.previewImage ? (
+                      <div className="absolute inset-0">
+                        <img 
+                          src={project.previewImage} 
+                          alt={project.title}
+                          className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent opacity-60" />
+                      </div>
+                    ) : project.url ? (
                       <div className="absolute inset-0 overflow-hidden pointer-events-none">
                         <iframe 
                           src={project.url} 
