@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowLeft, ExternalLink, Github, Code, Layout, Globe, Terminal, Palette, Smartphone, Menu, X } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Github, Code, Layout, Globe, Terminal, Palette, Smartphone, Menu, X, Scissors } from 'lucide-react';
 
 const allProjects = [
   {
@@ -100,6 +100,18 @@ const allProjects = [
     color: 'from-accent/25 to-secondary/10',
     url: 'https://kaya-rose.vercel.app/',
     previewImage: '/kaya-preview.png'
+  },
+  {
+    id: 9,
+    title: 'Signature Cuts',
+    category: 'Barbershop • Booking',
+    year: '2026',
+    description: 'A premium barbershop platform with online appointment booking, interactive service menu, barber profiles, and client reviews. Built for a high-end grooming experience.',
+    tech: ['React', 'Vite', 'TailwindCSS', 'TypeScript'],
+    features: ['Online booking system', 'Service menu catalog', 'Barber profiles', 'Client testimonials'],
+    icon: <Scissors className="w-5 h-5" />,
+    color: 'from-secondary/20 to-secondary/5',
+    url: 'https://signature-cuts.vercel.app/',
   },
 ];
 
