@@ -3,9 +3,9 @@ import { ExternalLink, Github } from 'lucide-react';
 import TiltCard from './TiltCard';
 
 const projects = [
-  { title: 'Lumina Dental Studio', category: 'Healthcare • Dashboard', description: 'Exceptional aesthetic dental care dashboard and smile transformations patient management system.', tech: ['React', 'Supabase', 'TailwindCSS'], color: 'from-secondary/20 to-secondary/5', url: 'https://dentist-brown-chi.vercel.app/', previewImage: '/lumina-preview.png' },
+  { title: 'Smile Haven', category: 'Healthcare • Luxury', description: 'An ultra-luxury dental experience platform featuring cosmetic veneers, implants, invisible orthodontics, and custom smile transformations.', tech: ['React', 'Vite', 'Three.js', 'TailwindCSS'], color: 'from-secondary/20 to-secondary/5', url: 'https://smile-haven-black.vercel.app/', previewImage: '/smile-haven-preview.png' },
   { title: 'German Fitness & Sports', category: 'Fitness • E-Commerce', description: 'Elite fitness training center platform featuring membership registration and supplements store.', tech: ['React', 'Node.js', 'Vercel'], color: 'from-primary/20 to-primary/5', url: 'https://german-fitness.vercel.app/', previewImage: '/german-fitness.png' },
-  { title: 'BENNY™ Fitness', category: 'Landing Page • Health', description: 'Premium gym landing page with modern typography, smooth animations, and a high-end visual aesthetic.', tech: ['React', 'TailwindCSS', 'Motion'], color: 'from-accent/20 to-accent/5', url: 'https://gym-landing-page-puce-gamma.vercel.app/', previewImage: '/benny-fitness.png' },
+  { title: 'KAYA Restaurant', category: 'Fine Dining • Luxury', description: 'A Michelin 3-star fine dining restaurant platform built around wood-fired hearth cooking, featuring interactive 3D particles.', tech: ['React', 'Vite', 'Three.js', 'TailwindCSS'], color: 'from-accent/25 to-secondary/10', url: 'https://kaya-rose.vercel.app/', previewImage: '/kaya-preview.png' },
 ];
 
 export default function WorkFolder() {

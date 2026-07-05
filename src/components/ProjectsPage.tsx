@@ -4,6 +4,19 @@ import { ArrowLeft, ExternalLink, Github, Code, Layout, Globe, Terminal, Palette
 
 const allProjects = [
   {
+    id: 10,
+    title: 'Smile Haven',
+    category: 'Healthcare • Luxury',
+    year: '2026',
+    description: 'An ultra-luxury dental experience platform featuring cosmetic veneers, implants, invisible orthodontics, and custom smile transformations. Built with smooth interactive 3D elements.',
+    tech: ['React', 'Vite', 'Three.js', 'TailwindCSS'],
+    features: ['Luxury smile design preview', 'Cosmetic and implant showcases', 'Interactive 3D elements', 'Responsive aesthetic layout'],
+    icon: <Layout className="w-5 h-5" />,
+    color: 'from-secondary/20 to-secondary/5',
+    url: 'https://smile-haven-black.vercel.app/',
+    previewImage: '/smile-haven-preview.png'
+  },
+  {
     id: 1,
     title: 'Lumina Dental Studio',
     category: 'Healthcare • Dashboard',
